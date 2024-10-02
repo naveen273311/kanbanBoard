@@ -1,0 +1,44 @@
+.ticket-card {
+  background-color: white; /* Set background to white */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card-like appearance */
+  padding: 16px; /* Add padding inside the card */
+  margin-bottom: 16px; /* Add spacing between cards */
+  display: flex;
+  flex-direction: column; /* Column layout for title, tags, and priority */
+  justify-content: space-between;
+  width: 260px; /* Fixed width like the cards in the image */
+  transition: box-shadow 0.2s ease;
+}
+
+.ticket-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.ticket-card h3 {
+  font-size: 18px; /* Adjusted font size for the title */
+  font-weight: 600;
+  color: #333; /* Dark text color for the title */
+  margin-bottom: 8px; /* Add some spacing below the title */
+}
+
+.ticket-card p {
+  font-size: 14px; /* Smaller font for the tags */
+  color: #777; /* Lighter color for tags */
+  margin-bottom: 12px; /* Add space below the tags */
+}
+
+.ticket-card span {
+  font-size: 12px; /* Smaller font for the priority text */
+  color: #555; /* Neutral text color */
+  align-self: flex-end; /* Align priority to the right */
+}
+
+/* Add general page styling to mimic the layout */
+.ticket-board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Add gap between the cards */
+  padding: 24px; /* Page padding */
+  background-color: #f8f9fa; /* Light background color for the page */
+}
